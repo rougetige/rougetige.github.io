@@ -8,61 +8,58 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;700&display=swap" rel="stylesheet">
 
-<style>
-  :root {
-    --bg: #EEE7E1;
-    --text: #17161b;
-  }
+  <style>
+    :root {
+      --bg: #EEE7E1;
+      --text: #17161b;
+    }
 
-  * {
-    box-sizing: border-box;
-  }
+    * {
+      box-sizing: border-box;
+    }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-  body {
-    background: var(--bg);
-    font-family: 'Azeret Mono', monospace;
-    color: var(--text);
+    body {
+      background: var(--bg);
+      font-family: 'Azeret Mono', monospace;
+      color: var(--text);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    text-align: center;
-    padding: 32px;
-  }
+      text-align: center;
+      padding: 32px;
+    }
 
-  .wrapper {
-    max-width: 100%;
-  }
+    .wrapper {
+      max-width: 100%;
+    }
 
-  h1 {
-    font-weight: 700;
-    font-size: clamp(22px, 6vw, 28px);
-    letter-spacing: 0.12em;
-    margin: 0 0 16px 0;
-    text-transform: uppercase;
-  }
+    .wrapper h1 {
+      font-weight: 700;
+      font-size: clamp(1.6rem, 6vw, 3rem);
+      letter-spacing: 0.12em;
+      margin: 0 0 16px 0;
+      text-transform: uppercase;
+      white-space: nowrap; /* 👈 empêche le retour à la ligne */
+    }
 
-  p {
-    font-weight: 300;
-    font-size: clamp(14px, 4vw, 16px);
-    margin: 0;
-    opacity: 0.9;
-  }
-</style>
+    p {
+      font-weight: 300;
+      font-size: clamp(14px, 4vw, 16px);
+      margin: 0;
+      opacity: 0.9;
+    }
+  </style>
 </head>
 
 <body>
   <div class="wrapper">
-    <h1>{ SITE EN CONSTRUCTION }</h1>
-    <p>Recréer le cycle.</p>
-  </div>
-</body>
-</html>
+    <h1>{ SITE EN CONSTRUCTION }<
