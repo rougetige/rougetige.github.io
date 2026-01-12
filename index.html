@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Rouge Tige</title>
+  <meta charset="UTF-8" />
+  <title>Rouge Tige — Site en construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Font : Azeret Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --bg: #EEE7E1;
+      --text: #17161b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -18,36 +26,42 @@
     }
 
     body {
-      background-color: #EEE7E1;
+      background: var(--bg);
+      font-family: 'Azeret Mono', monospace;
+      color: var(--text);
+
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Azeret Mono', monospace;
-      color: #17161b;
+
+      text-align: center;
+      padding: 24px;
     }
 
-    .container {
-      text-align: center;
+    .wrapper {
+      max-width: 90vw;
     }
 
     h1 {
-      font-size: 20px;
-      font-weight: 700; /* Bold */
+      font-weight: 700;
+      font-size: clamp(16px, 4vw, 20px);
+      letter-spacing: 0.08em;
       margin: 0 0 12px 0;
-      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     p {
-      font-size: 12px;
-      font-weight: 300; /* Light */
+      font-weight: 300;
+      font-size: clamp(11px, 3vw, 12px);
       margin: 0;
+      opacity: 0.9;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
- <h1>{ SITE EN CONSTRUCTION }</h1>
+  <div class="wrapper">
+    <h1>{ SITE EN CONSTRUCTION }</h1>
     <p>Recréer le cycle.</p>
   </div>
 </body>
