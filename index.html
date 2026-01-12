@@ -18,7 +18,8 @@
       box-sizing: border-box;
     }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -42,27 +43,35 @@
       max-width: 100%;
     }
 
-/* DESKTOP / GRAND ÉCRAN */
-h1 {
-  font-weight: 700;
-  font-size: 24px;       /* ↓ réduit */
-  letter-spacing: 0.11em;
-  margin: 0 0 14px 0;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
+    /* =====================
+       DESKTOP
+       ===================== */
 
-p {
-  font-weight: 300;
-  font-size: 15px;       /* ↓ réduit */
-  margin: 0;
-  opacity: 0.9;
-}
-y: 0.9;
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 0.11em;
+      margin: 0 0 14px 0;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
 
-    /* iPAD + MOBILE */
+    p {
+      font-weight: 300;
+      font-size: 15px;
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    /* =====================
+       TABLET (iPad)
+       ===================== */
+
     @media (max-width: 1024px) {
+      body {
+        padding: 48px 32px;
+      }
+
       h1 {
         font-size: 22px;
         letter-spacing: 0.1em;
@@ -70,6 +79,25 @@ y: 0.9;
 
       p {
         font-size: 14px;
+      }
+    }
+
+    /* =====================
+       MOBILE
+       ===================== */
+
+    @media (max-width: 600px) {
+      body {
+        padding: 56px 24px;
+      }
+
+      h1 {
+        font-size: 20px;
+        letter-spacing: 0.09em;
+      }
+
+      p {
+        font-size: 13px;
       }
     }
   </style>
